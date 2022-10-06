@@ -1,0 +1,12 @@
+vpc_cidr = "10.40.0.0/16"
+vpc_Name = "eks-vpc"
+#region = ["us-east-1a","us-east-1b"]
+public_subnets_cidr = ["10.40.10.0/24","10.40.11.0/24"]
+private_subnets_cidr = ["10.40.20.0/24","10.40.21.0/24"]
+database_subnets_cidr = ["10.40.30.0/24","10.40.31.0/24"]
+public_subnet_tags = "public-subnets"
+private_subnet_tags = "private-subnets"
+database_subnet_tags = "database-subnets"
+vpc_tags = "eks-vpc"
+instance_type = "t2.micro"
+key_Name = "test.pem"
