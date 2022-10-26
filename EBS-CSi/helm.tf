@@ -6,7 +6,7 @@ resource "helm_release" "ebs-csi-driver-helm" {
    namespace = "kube-system"  
   set {
     name  = "image.repository"
-    value = "602401143452.dkr.ecr.us-east-1.amazonaws.com"
+    value = "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/aws-ebs-csi-driver"
   }
 
   set {
